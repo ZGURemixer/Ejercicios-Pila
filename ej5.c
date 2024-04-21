@@ -7,7 +7,7 @@ get_sum(Stack stack)
     Element sum = 0;
 
     do {
-        sum += peek(stack, FALSE);
+        sum += peek(stack, VERBOSE_MODE);
         pop(&stack);
     } while (stack.top > EMPTY);
 
